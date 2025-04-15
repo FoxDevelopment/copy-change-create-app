@@ -1,4 +1,3 @@
-
 import { useLanguage } from '../context/LanguageContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -7,6 +6,11 @@ import { ChevronRight, CheckCircle2, Instagram, Facebook, Twitter, Linkedin, Mes
 
 const Index = () => {
   const { t } = useLanguage();
+
+  const handleDemoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.href = 'mailto:hunter.iogonzalo@gmail.com?subject=Solicitud%20de%20Demo%20Hunter%20AI';
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -26,14 +30,9 @@ const Index = () => {
               <p className="mb-8 text-emerald-100">
                 {t('hunter_es')}
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-white text-emerald-800 hover:bg-emerald-100">
-                  {t('probar_hunter')}
-                </Button>
-                <Button variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
-                  {t('solicitar_demo_gratis')}
-                </Button>
-              </div>
+              <Button size="lg" className="bg-white text-emerald-800 hover:bg-emerald-100" onClick={handleDemoClick}>
+                {t('probar_hunter')}
+              </Button>
             </div>
             <div className="flex justify-center lg:justify-end">
               <img 
@@ -53,74 +52,6 @@ const Index = () => {
           <p className="text-center text-gray-700 max-w-4xl mx-auto mb-12">
             {t('potenciamos')}
           </p>
-          
-          {/* Process Workflow - Based on the hand-drawn diagram */}
-          <div className="mt-16 max-w-5xl mx-auto">
-            <h3 className="text-2xl font-semibold text-center mb-10">Proceso de Hunter AI</h3>
-            <div className="relative">
-              {/* Workflow Diagram */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-                {/* Step 1 */}
-                <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition-transform hover:scale-105">
-                  <h4 className="text-xl font-semibold mb-3">1. Detector Inteligente</h4>
-                  <p className="text-gray-600">Nuestro sistema analiza y detecta potenciales leads basados en perfiles y comportamientos predefinidos.</p>
-                </div>
-                
-                {/* Step 2 */}
-                <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition-transform hover:scale-105">
-                  <h4 className="text-xl font-semibold mb-3">2. Sistema de Respuesta</h4>
-                  <p className="text-gray-600">Automatiza el flujo de comunicación con leads detectados según parámetros establecidos.</p>
-                </div>
-                
-                {/* Step 3 */}
-                <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition-transform hover:scale-105">
-                  <h4 className="text-xl font-semibold mb-3">3. Sistema de Seguimiento</h4>
-                  <p className="text-gray-600">Monitoriza la progresión de cada lead a través del embudo de conversión.</p>
-                </div>
-              </div>
-              
-              {/* Second Row */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 relative z-10">
-                {/* Step 4 */}
-                <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition-transform hover:scale-105">
-                  <h4 className="text-xl font-semibold mb-3">4. Mensajes Automatizados</h4>
-                  <p className="text-gray-600">Envío inteligente de mensajes personalizados según el perfil del lead y su etapa en el embudo.</p>
-                </div>
-                
-                {/* Step 5 */}
-                <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition-transform hover:scale-105">
-                  <h4 className="text-xl font-semibold mb-3">5. Clasificación CRM</h4>
-                  <p className="text-gray-600">Categorización automática en base a interacciones, permitiendo optimizar la estrategia de ventas.</p>
-                </div>
-                
-                {/* Step 6 */}
-                <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition-transform hover:scale-105">
-                  <h4 className="text-xl font-semibold mb-3">6. Multicanal</h4>
-                  <p className="text-gray-600">Integración con múltiples plataformas para maximizar el alcance y eficacia de las campañas.</p>
-                </div>
-              </div>
-              
-              {/* Connection Lines - Simplified for responsive design */}
-              <div className="hidden md:block absolute inset-0">
-                <svg className="w-full h-full" viewBox="0 0 1000 400" preserveAspectRatio="none">
-                  <path 
-                    d="M250,100 C350,100 350,200 450,200 C550,200 550,100 650,100" 
-                    stroke="#4CAF91" 
-                    strokeWidth="2" 
-                    fill="none" 
-                    strokeDasharray="5,5"
-                  />
-                  <path 
-                    d="M250,300 C350,300 350,200 450,200 C550,200 550,300 650,300" 
-                    stroke="#4CAF91" 
-                    strokeWidth="2" 
-                    fill="none" 
-                    strokeDasharray="5,5"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
           
           {/* Social Media Icons */}
           <div className="flex justify-center mt-16 space-x-8">
@@ -142,6 +73,50 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Process Workflow - Updated with static design */}
+      <div className="mt-16 max-w-5xl mx-auto">
+        <h3 className="text-2xl font-semibold text-center mb-10">{t('proceso_hunter')}</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+          {/* Steps 1-3 */}
+          <div className="space-y-8">
+            {/* Step 1 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
+              <h4 className="text-xl font-semibold mb-3">1. {t('detector_inteligente')}</h4>
+              <p className="text-gray-600">{t('detector_desc')}</p>
+            </div>
+            {/* Step 2 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
+              <h4 className="text-xl font-semibold mb-3">2. {t('sistema_respuesta')}</h4>
+              <p className="text-gray-600">{t('sistema_respuesta_desc')}</p>
+            </div>
+            {/* Step 3 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
+              <h4 className="text-xl font-semibold mb-3">3. {t('sistema_seguimiento')}</h4>
+              <p className="text-gray-600">{t('sistema_seguimiento_desc')}</p>
+            </div>
+          </div>
+          
+          {/* Steps 4-6 */}
+          <div className="space-y-8 mt-8 md:mt-0">
+            {/* Step 4 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
+              <h4 className="text-xl font-semibold mb-3">4. {t('mensajes_automatizados')}</h4>
+              <p className="text-gray-600">{t('mensajes_automatizados_desc')}</p>
+            </div>
+            {/* Step 5 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
+              <h4 className="text-xl font-semibold mb-3">5. {t('clasificacion_crm')}</h4>
+              <p className="text-gray-600">{t('clasificacion_crm_desc')}</p>
+            </div>
+            {/* Step 6 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
+              <h4 className="text-xl font-semibold mb-3">6. {t('multicanal')}</h4>
+              <p className="text-gray-600">{t('multicanal_desc')}</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Benefits Section */}
       <section className="py-16 bg-gray-50">

@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 type Language = 'es' | 'en';
@@ -21,7 +20,7 @@ const translations = {
     // Hero section
     "bienvenida": "Welcome to Hunter, where we don't wait for opportunities — we create them and hunt them down.",
     "tus_metas": "Your goals, our target.",
-    "hunter_es": "HUNTER is a tool designed with innovative technology and complete algorithms that automate every step of the lead prospecting and management process. It allows you to focus on closing deals instead of tracking and follow-up. Simplify your strategy, automate your sales and let us hunt for you.",
+    "hunter_es": "We enhance customer acquisition and conversion with artificial intelligence, automating lead prospecting and management across multiple channels, without interruption for businesses or personal brands looking to attract customers in a sustainable and scalable way",
     "probar_hunter": "Try Hunter now",
     "solicitar_demo_gratis": "Request a free demo",
     
@@ -35,6 +34,21 @@ const translations = {
     "integracion_plataformas": "Integration with multiple platforms",
     "crm_manejo": "CRM and unified management",
     "escalabilidad": "Scalability through multiple accounts",
+    
+    // Process steps
+    "proceso_hunter": "Hunter AI Process",
+    "detector_inteligente": "Smart Detector",
+    "detector_desc": "Our system analyzes and detects potential leads based on predefined profiles and behaviors.",
+    "sistema_respuesta": "Response System",
+    "sistema_respuesta_desc": "Automates communication flow with detected leads according to established parameters.",
+    "sistema_seguimiento": "Tracking System",
+    "sistema_seguimiento_desc": "Monitors each lead's progression through the conversion funnel.",
+    "mensajes_automatizados": "Automated Messages",
+    "mensajes_automatizados_desc": "Smart sending of personalized messages based on lead profile and funnel stage.",
+    "clasificacion_crm": "CRM Classification",
+    "clasificacion_crm_desc": "Automatic categorization based on interactions, allowing sales strategy optimization.",
+    "multicanal": "Multichannel",
+    "multicanal_desc": "Integration with multiple platforms to maximize campaign reach and effectiveness.",
     
     // Testimonials
     "testimonios": "Testimonials",
@@ -130,7 +144,7 @@ const translations = {
     // Hero section
     "bienvenida": "Bienvenido a Hunter, donde no esperamos oportunidades — las creamos y las cazamos.",
     "tus_metas": "Tus metas, nuestro blanco.",
-    "hunter_es": "HUNTER ES una herramienta diseñada con tecnología innovadora y algoritmos completos que automatizan cada paso del proceso de prospección y gestión de leads. Te permite enfocarte en cerrar tratos en lugar de rastrear y seguimientos. Simplifica tu estrategia, automatiza tus ventas y déjanos cazar tu mismo.",
+    "hunter_es": "Potenciamos la captación y conversión de clientes con inteligencia artificial, automatizando la prospección y gestión de leads en múlticanal, sin interrupcion para empresas o marcas personales que buscan atraer clientes de manera sostenible y escalable",
     "probar_hunter": "Probar Hunter ahora",
     "solicitar_demo_gratis": "Solicitar demo gratuito",
     
@@ -144,6 +158,21 @@ const translations = {
     "integracion_plataformas": "Integración con múltiples plataformas",
     "crm_manejo": "CRM y manejo unificado",
     "escalabilidad": "Escalabilidad mediante múltiples cuentas",
+    
+    // Process steps
+    "proceso_hunter": "Proceso de Hunter AI",
+    "detector_inteligente": "Detector Inteligente",
+    "detector_desc": "Nuestro sistema analiza y detecta potenciales leads basados en perfiles y comportamientos predefinidos.",
+    "sistema_respuesta": "Sistema de Respuesta",
+    "sistema_respuesta_desc": "Automatiza el flujo de comunicación con leads detectados según parámetros establecidos.",
+    "sistema_seguimiento": "Sistema de Seguimiento",
+    "sistema_seguimiento_desc": "Monitoriza la progresión de cada lead a través del embudo de conversión.",
+    "mensajes_automatizados": "Mensajes Automatizados",
+    "mensajes_automatizados_desc": "Envío inteligente de mensajes personalizados según el perfil del lead y su etapa en el embudo.",
+    "clasificacion_crm": "Clasificación CRM",
+    "clasificacion_crm_desc": "Categorización automática en base a interacciones, permitiendo optimizar la estrategia de ventas.",
+    "multicanal": "Multicanal",
+    "multicanal_desc": "Integración con múltiples plataformas para maximizar el alcance y eficacia de las campañas.",
     
     // Testimonials
     "testimonios": "Testimonios",
