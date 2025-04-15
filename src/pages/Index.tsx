@@ -1,5 +1,6 @@
+
 import { useLanguage } from '../context/LanguageContext';
-import { MessageSquare, ChevronRight } from 'lucide-react';
+import { MessageSquare, ChevronRight, CheckCircle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HeroSection from '../components/home/HeroSection';
@@ -122,19 +123,19 @@ const Index = () => {
               <div className="p-6">
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('integracion_red')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('hasta_mensajes')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('panel_basico')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('soporte_email')}</span>
                   </li>
                 </ul>
@@ -155,23 +156,23 @@ const Index = () => {
               <div className="p-6">
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('integracion_redes')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('hasta_200_mensajes')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('panel_avanzado')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('soporte_prioritario')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('caracteristicas_basicas')}</span>
                   </li>
                 </ul>
@@ -191,27 +192,27 @@ const Index = () => {
               <div className="p-6">
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('integracion_todas')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('hasta_200_mensajes')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('suite_analisis')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('soporte_24_7')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('caracteristicas_avanzadas')}</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{t('herramientas_colaboracion')}</span>
                   </li>
                 </ul>
