@@ -18,7 +18,7 @@ const translations = {
     "solicitar_demo": "Request Demo",
     
     // Hero section
-    "bienvenida": "Welcome to Hunter, where we don't wait for opportunities — we create them and hunt them down.",
+    "bienvenida": "Where we don't wait for opportunities — we create and hunt them",
     "tus_metas": "Your goals, our target.",
     "hunter_es": "We enhance customer acquisition and conversion with artificial intelligence, automating lead prospecting and management across multiple channels, without interruption for businesses or personal brands looking to attract customers in a sustainable and scalable way",
     "probar_hunter": "Try Hunter now",
@@ -26,7 +26,7 @@ const translations = {
     
     // Features
     "que_es_hunter": "What is Hunter AI?",
-    "potenciamos": "We enhance the capture and conversion of clients with artificial intelligence by automating lead prospecting and management on multiple platforms, a solution for businesses and brands that want to grow without human intervention.",
+    "potenciamos": "HUNTER I.S, a tool designed with innovative technology and complex algorithms that automate every step of the prospecting process, from identifying potential customers to contact and follow-up. Simplify your strategy, save time and effort in growing your brand.",
     
     // Benefits
     "beneficios_clave": "Key Benefits",
@@ -142,7 +142,7 @@ const translations = {
     "solicitar_demo": "Solicitar Demo",
     
     // Hero section
-    "bienvenida": "Bienvenido a Hunter, donde no esperamos oportunidades — las creamos y las cazamos.",
+    "bienvenida": "Donde no esperamos oportunidades — las creamos y las cazamos",
     "tus_metas": "Tus metas, nuestro blanco.",
     "hunter_es": "Potenciamos la captación y conversión de clientes con inteligencia artificial, automatizando la prospección y gestión de leads en múlticanal, sin interrupcion para empresas o marcas personales que buscan atraer clientes de manera sostenible y escalable",
     "probar_hunter": "Probar Hunter ahora",
@@ -150,7 +150,7 @@ const translations = {
     
     // Features
     "que_es_hunter": "¿Qué es Hunter AI?",
-    "potenciamos": "Potenciamos la captación y conversión de clientes con inteligencia artificial automatizando la prospección y gestión de leads en múltiples plataformas, una intervención para empresas y marcas que quieran crecer sin intervención humana.",
+    "potenciamos": "HUNTER I.S, una herramienta diseñada con tecnología innovadora y algoritmos complejos que automatizan cada paso del proceso de prospección, desde la identificación de posibles clientes hasta el contacto y seguimiento. Simplifica tu estrategia, ahorra tiempo y esfuerzo en hacer crecer tu marca.",
     
     // Benefits
     "beneficios_clave": "Beneficios Clave",

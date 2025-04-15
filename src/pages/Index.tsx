@@ -1,123 +1,22 @@
 import { useLanguage } from '../context/LanguageContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import HeroSection from '../components/home/HeroSection';
+import WhatIsHunter from '../components/home/WhatIsHunter';
+import ProcessSection from '../components/home/ProcessSection';
 import { Button } from '@/components/ui/button';
-import { ChevronRight, CheckCircle2, Instagram, Facebook, Twitter, Linkedin, MessageSquare } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 const Index = () => {
   const { t } = useLanguage();
 
-  const handleDemoClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    window.location.href = 'mailto:hunter.iogonzalo@gmail.com?subject=Solicitud%20de%20Demo%20Hunter%20AI';
-  };
-
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
+      <HeroSection />
+      <WhatIsHunter />
+      <ProcessSection />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-emerald-600 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-600 to-emerald-800"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                {t('bienvenida')}
-              </h1>
-              <p className="text-xl mb-6">{t('tus_metas')}</p>
-              <p className="mb-8 text-emerald-100">
-                {t('hunter_es')}
-              </p>
-              <Button size="lg" className="bg-white text-emerald-800 hover:bg-emerald-100" onClick={handleDemoClick}>
-                {t('probar_hunter')}
-              </Button>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="/lovable-uploads/3dfcccdb-7db4-4217-bb7f-d6afcf561dd2.png" 
-                alt="Hunter Logo" 
-                className="h-48 md:h-72 w-auto opacity-90"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What is Hunter AI Section */}
-      <section id="caracteristicas" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">{t('que_es_hunter')}</h2>
-          <p className="text-center text-gray-700 max-w-4xl mx-auto mb-12">
-            {t('potenciamos')}
-          </p>
-          
-          {/* Social Media Icons */}
-          <div className="flex justify-center mt-16 space-x-8">
-            <div className="p-4 rounded-full bg-pink-100 text-pink-500">
-              <Instagram size={32} />
-            </div>
-            <div className="p-4 rounded-full bg-blue-100 text-blue-500">
-              <Facebook size={32} />
-            </div>
-            <div className="p-4 rounded-full bg-blue-100 text-sky-500">
-              <Twitter size={32} />
-            </div>
-            <div className="p-4 rounded-full bg-blue-100 text-blue-700">
-              <Linkedin size={32} />
-            </div>
-            <div className="p-4 rounded-full bg-green-100 text-green-500">
-              <MessageSquare size={32} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Workflow - Updated with static design */}
-      <div className="mt-16 max-w-5xl mx-auto">
-        <h3 className="text-2xl font-semibold text-center mb-10">{t('proceso_hunter')}</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-          {/* Steps 1-3 */}
-          <div className="space-y-8">
-            {/* Step 1 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
-              <h4 className="text-xl font-semibold mb-3">1. {t('detector_inteligente')}</h4>
-              <p className="text-gray-600">{t('detector_desc')}</p>
-            </div>
-            {/* Step 2 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
-              <h4 className="text-xl font-semibold mb-3">2. {t('sistema_respuesta')}</h4>
-              <p className="text-gray-600">{t('sistema_respuesta_desc')}</p>
-            </div>
-            {/* Step 3 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
-              <h4 className="text-xl font-semibold mb-3">3. {t('sistema_seguimiento')}</h4>
-              <p className="text-gray-600">{t('sistema_seguimiento_desc')}</p>
-            </div>
-          </div>
-          
-          {/* Steps 4-6 */}
-          <div className="space-y-8 mt-8 md:mt-0">
-            {/* Step 4 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
-              <h4 className="text-xl font-semibold mb-3">4. {t('mensajes_automatizados')}</h4>
-              <p className="text-gray-600">{t('mensajes_automatizados_desc')}</p>
-            </div>
-            {/* Step 5 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
-              <h4 className="text-xl font-semibold mb-3">5. {t('clasificacion_crm')}</h4>
-              <p className="text-gray-600">{t('clasificacion_crm_desc')}</p>
-            </div>
-            {/* Step 6 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg border-t-4 border-emerald-500 transform transition hover:scale-105">
-              <h4 className="text-xl font-semibold mb-3">6. {t('multicanal')}</h4>
-              <p className="text-gray-600">{t('multicanal_desc')}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Benefits Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -151,7 +50,7 @@ const Index = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                   <circle cx="9" cy="7" r="4" />
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M22 21v-2a4 4 0 0 1 0 7.75" />
                   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
               </div>
