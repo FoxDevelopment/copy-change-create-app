@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Link } from 'react-router-dom';
@@ -19,8 +18,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleLanguage = () => {
-    setLanguage(language === 'es' ? 'en' : 'es');
+  const handleDemoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.href = 'mailto:hunter.iogonzalo@gmail.com?subject=Solicitud%20de%20Demo%20Hunter%20AI';
   };
 
   return (
@@ -30,13 +30,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center transition-transform duration-300 hover:scale-105">
             <img 
               src="/lovable-uploads/3dfcccdb-7db4-4217-bb7f-d6afcf561dd2.png" 
               alt="Hunter Logo" 
               className="h-8 w-auto"
             />
-            <span className="ml-2 text-white text-xl font-bold">HUNTER</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -74,7 +73,10 @@ const Navbar = () => {
             </div>
             
             {/* CTA Button */}
-            <Button className="bg-white text-emerald-800 hover:bg-emerald-100">
+            <Button 
+              onClick={handleDemoClick}
+              className="bg-white text-emerald-800 hover:bg-emerald-100 transition-all duration-300"
+            >
               {t('solicitar_demo')}
             </Button>
           </div>
@@ -147,8 +149,8 @@ const Navbar = () => {
                 {t('contacto')}
               </a>
               <Button 
-                className="bg-white text-emerald-800 hover:bg-emerald-100 w-full"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={handleDemoClick}
+                className="bg-white text-emerald-800 hover:bg-emerald-100 transition-all duration-300 w-full"
               >
                 {t('solicitar_demo')}
               </Button>
