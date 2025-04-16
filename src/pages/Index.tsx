@@ -1,11 +1,12 @@
 
 import { useLanguage } from '../context/LanguageContext';
-import { MessageSquare, ChevronRight, CheckCircle } from 'lucide-react';
+import { MessageSquare, ChevronRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HeroSection from '../components/home/HeroSection';
 import WhatIsHunter from '../components/home/WhatIsHunter';
 import ProcessSection from '../components/home/ProcessSection';
+import TestimonialsCarousel from '../components/home/TestimonialsCarousel';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
       <HeroSection />
       <WhatIsHunter />
       <ProcessSection />
+      <TestimonialsCarousel />
       
       {/* Benefits Section */}
       <section className="py-16 bg-gray-50">

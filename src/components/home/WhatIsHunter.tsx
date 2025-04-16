@@ -1,34 +1,55 @@
 
 import { useLanguage } from '../../context/LanguageContext';
 import { Instagram, Facebook, Twitter, Linkedin, MessageSquare } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 const WhatIsHunter = () => {
   const { t } = useLanguage();
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in-up');
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section id="caracteristicas" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">{t('que_es_hunter')}</h2>
-        <p className="text-center text-gray-700 max-w-4xl mx-auto mb-12">
-          {t('potenciamos')}
-        </p>
+    <section id="caracteristicas" ref={sectionRef} className="py-16 bg-white opacity-0">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 background-animate">{t('que_es_hunter')}</h2>
+        <div className="text-center text-gray-700 space-y-8">
+          <p className="text-lg leading-relaxed transform transition-all duration-500 hover:scale-105 mx-auto max-w-4xl">
+            {t('potenciamos')}
+          </p>
+        </div>
         
-        <div className="flex justify-center mt-16 space-x-8">
-          <div className="p-4 rounded-full bg-pink-100 text-pink-500">
-            <Instagram size={32} />
-          </div>
-          <div className="p-4 rounded-full bg-blue-100 text-blue-500">
-            <Facebook size={32} />
-          </div>
-          <div className="p-4 rounded-full bg-blue-100 text-sky-500">
-            <Twitter size={32} />
-          </div>
-          <div className="p-4 rounded-full bg-blue-100 text-blue-700">
-            <Linkedin size={32} />
-          </div>
-          <div className="p-4 rounded-full bg-green-100 text-green-500">
-            <MessageSquare size={32} />
-          </div>
+        <div className="flex justify-center mt-16 space-x-4 md:space-x-8">
+          {[
+            { Icon: Instagram, bg: 'bg-pink-100', text: 'text-pink-500' },
+            { Icon: Facebook, bg: 'bg-blue-100', text: 'text-blue-500' },
+            { Icon: Twitter, bg: 'bg-blue-100', text: 'text-sky-500' },
+            { Icon: Linkedin, bg: 'bg-blue-100', text: 'text-blue-700' },
+            { Icon: MessageSquare, bg: 'bg-green-100', text: 'text-green-500' }
+          ].map(({ Icon, bg, text }, index) => (
+            <div
+              key={index}
+              className={`p-4 rounded-full ${bg} ${text} transform transition-all duration-300 hover:scale-110 hover:shadow-lg cursor-pointer animate-fade-in`}
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              <Icon size={32} className="animate-pulse" />
+            </div>
+          ))}
         </div>
       </div>
     </section>
