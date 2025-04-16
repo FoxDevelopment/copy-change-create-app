@@ -1,6 +1,5 @@
-
 import { useLanguage } from '../context/LanguageContext';
-import { MessageSquare, ChevronRight } from 'lucide-react';
+import { CheckCircle, ChevronRight, MessageSquare } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HeroSection from '../components/home/HeroSection';

@@ -1,4 +1,3 @@
-
 import { useLanguage } from '../../context/LanguageContext';
 import { Instagram, Facebook, Twitter, Linkedin, MessageSquare } from 'lucide-react';
 import { useEffect, useRef } from 'react';
@@ -30,7 +29,8 @@ const WhatIsHunter = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 background-animate">{t('que_es_hunter')}</h2>
         <div className="text-center text-gray-700 space-y-8">
           <p className="text-lg leading-relaxed transform transition-all duration-500 hover:scale-105 mx-auto max-w-4xl">
-            {t('potenciamos')}
+            HUNTER I.S, una herramienta diseñada con tecnología innovadora y algoritmos complejos que automatizan cada paso del proceso de prospección, desde la identificación de posibles clientes hasta el contacto y seguimiento. Simplifica tu estrategia, ahorra tiempo y esfuerzo en hacer crecer tu marca.
+            Potenciamos la captación y conversión de clientes con inteligencia artificial, automatizando la prospección y gestión de leads en múlticanal, sin interrupcion para empresas o marcas personales que buscan atraer clientes de manera sostenible y escalable
           </p>
         </div>
         
