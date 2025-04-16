@@ -18,12 +18,13 @@ const ProcessSection = () => {
   return (
     <div className="py-16 bg-gradient-to-b from-white to-emerald-50">
       <div className="max-w-7xl mx-auto px-4">
-        <h3 className="text-5xl font-black text-center mb-12 relative">
-          <span className="bg-gradient-to-r from-emerald-600 via-emerald-400 to-emerald-600 bg-clip-text text-transparent background-animate">
-            Proceso de Hunter AI PRO
-          </span>
-          <div className="absolute w-32 h-1 bg-emerald-500 bottom-0 left-1/2 transform -translate-x-1/2 mt-4"></div>
-        </h3>
+      <h3 className="text-5xl font-black text-center mb-12 relative">
+  <span className="bg-gradient-to-r from-emerald-600 via-emerald-400 to-emerald-600 bg-clip-text text-transparent background-animate">
+    Proceso Hunter AI Pro
+  </span>
+  <div className="absolute w-40 h-1 bg-emerald-500 bottom-0 left-1/2 transform -translate-x-1/2"></div>
+</h3>
+
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           <ProcessCard 
