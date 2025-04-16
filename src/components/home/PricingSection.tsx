@@ -17,7 +17,7 @@ const PricingSection = () => {
             <div className="p-6 border-b border-gray-100">
               <h3 className="text-xl font-bold mb-2">{t('plan_basico')}</h3>
               <div className="flex items-baseline mb-4">
-                <span className="text-4xl font-bold">$99</span>
+                <span className="text-4xl font-bold">--</span>
                 <span className="text-gray-500 ml-1">{t('mes')}</span>
               </div>
             </div>
@@ -50,7 +50,7 @@ const PricingSection = () => {
             <div className="p-6 border-b border-gray-100 bg-emerald-50">
               <h3 className="text-xl font-bold mb-2">{t('plan_profesional')}</h3>
               <div className="flex items-baseline mb-4">
-                <span className="text-4xl font-bold">$199</span>
+                <span className="text-4xl font-bold">--</span>
                 <span className="text-gray-500 ml-1">{t('mes')}</span>
               </div>
             </div>
@@ -86,7 +86,7 @@ const PricingSection = () => {
             <div className="p-6 border-b border-gray-100">
               <h3 className="text-xl font-bold mb-2">{t('plan_empresarial')}</h3>
               <div className="flex items-baseline mb-4">
-                <span className="text-4xl font-bold">$349</span>
+                <span className="text-4xl font-bold">--</span>
                 <span className="text-gray-500 ml-1">{t('mes')}</span>
               </div>
             </div>
