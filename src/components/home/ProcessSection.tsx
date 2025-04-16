@@ -1,4 +1,3 @@
-
 import { useLanguage } from '../../context/LanguageContext';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
