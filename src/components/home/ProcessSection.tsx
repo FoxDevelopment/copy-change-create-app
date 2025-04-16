@@ -1,4 +1,3 @@
-
 import { useLanguage } from '../../context/LanguageContext';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
@@ -21,7 +20,7 @@ const ProcessSection = () => {
       <div className="max-w-7xl mx-auto px-4">
         <h3 className="text-5xl font-black text-center mb-12 relative">
           <span className="bg-gradient-to-r from-emerald-600 via-emerald-400 to-emerald-600 bg-clip-text text-transparent background-animate">
-            {t('proceso_hunter_ai_pro')}
+            Proceso de Hunter AI PRO
           </span>
           <div className="absolute w-32 h-1 bg-emerald-500 bottom-0 left-1/2 transform -translate-x-1/2 mt-4"></div>
         </h3>
