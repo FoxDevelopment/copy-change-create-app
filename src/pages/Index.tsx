@@ -17,14 +17,16 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <HeroSection />
-      <WhatIsHunter />
-      <ProcessSection />
-      <TestimonialsCarousel />
-      <BenefitsSection />
-      <PricingSection />
-      <FAQSection />
-      <CTASection />
+      <main>
+        <HeroSection />
+        <WhatIsHunter />
+        <ProcessSection />
+        <TestimonialsCarousel />
+        <BenefitsSection />
+        <PricingSection />
+        <FAQSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

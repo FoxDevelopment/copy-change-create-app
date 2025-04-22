@@ -1,3 +1,4 @@
+
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 type Language = 'es' | 'en';
@@ -57,10 +58,56 @@ const translations = {
     
     // Plans
     "planes_precios": "Plans and Pricing",
-    "plan_basico": "Basic Plan",
-    "plan_profesional": "Professional Plan",
-    "plan_empresarial": "Enterprise Plan",
+    "plan_basico": "HUNTER BASE",
+    "plan_profesional": "HUNTER PRO",
+    "plan_empresarial": "HUNTER GP (Growth Partner)",
     "mes": "/month",
+    "desde": "From",
+    "incluye": "Includes",
+    "extras": "Extras",
+    "popular": "Popular",
+    
+    // Basic plan details
+    "basic_description": "Ideal for entrepreneurs who want to activate their digital prospecting.",
+    "one_integrated_channel": "1 integrated channel (Instagram, WhatsApp, Facebook or Telegram)",
+    "accounts_per_channel": "Up to 2 accounts per channel",
+    "messages_per_month": "Up to 3000 messages per month",
+    "visual_crm": "Visual CRM with tags and filters",
+    "centralized_chat": "Centralized multi-account chat",
+    "basic_response": "Basic response system",
+    "simple_tracking": "Simple lead tracking",
+    "biweekly_call": "1 call every two weeks with implementation leader",
+    "message_library": "Library of winning messages by niche",
+    "community_access": "Access to private user community",
+    
+    // Pro plan details
+    "pro_description": "For expanding businesses that want to scale with real automation.",
+    "two_integrated_channels": "Up to 2 integrated channels",
+    "four_accounts_channel": "Up to 4 accounts per channel",
+    "six_thousand_messages": "Up to 6000 messages per month per account",
+    "advanced_crm": "Visual CRM with lead scoring and advanced filters",
+    "real_time_chat": "Centralized real-time chat",
+    "ai_response": "Response system with customized AI",
+    "automated_tracking": "Automated tracking by lead status",
+    "weekly_call": "1 weekly call with implementation leader",
+    "sales_scripts": "10 sales scripts ready to use",
+    "training_access": "Access to recorded trainings",
+    "follow_up_templates": "Post-message follow-up templates",
+    "weekly_reports": "Weekly reports with key metrics",
+    
+    // Enterprise plan details
+    "enterprise_description": "Our team works hand in hand with you to scale your entire acquisition system.",
+    "full_integration": "Full integration: IG, FB, WhatsApp, Telegram, TikTok, Email, SMS",
+    "unlimited_accounts": "Unlimited accounts per channel",
+    "unlimited_messages": "Unlimited messages",
+    "extended_crm": "Extended CRM with automations, flows and funnels",
+    "ai_chat": "Centralized chat + AI with contextual memory",
+    "personalized_ai": "Personalized AI to respond in real time with your tone and style",
+    "complete_tracking": "Complete tracking with funnels and remarketing",
+    "strategic_support": "1:1 strategic support",
+    "funnel_design": "Design and optimization of complete funnels",
+    "hunter_team": "Team of human Hunters + hybrid AI in real time",
+    
     "integracion_red": "Integration with 1 social network",
     "hasta_mensajes": "Up to 50 messages per day",
     "panel_basico": "Basic analytics panel",
@@ -181,10 +228,56 @@ const translations = {
     
     // Plans
     "planes_precios": "Planes y Precios",
-    "plan_basico": "Plan Básico",
-    "plan_profesional": "Plan Profesional",
-    "plan_empresarial": "Plan Empresarial",
+    "plan_basico": "HUNTER BASE",
+    "plan_profesional": "HUNTER PRO",
+    "plan_empresarial": "HUNTER GP (Growth Partner)",
     "mes": "/mes",
+    "desde": "Desde",
+    "incluye": "Incluye",
+    "extras": "Extras",
+    "popular": "Popular",
+    
+    // Basic plan details
+    "basic_description": "Ideal para emprendedores que quieren activar su prospección digital.",
+    "one_integrated_channel": "1 canal integrado (Instagram, WhatsApp, Facebook o Telegram)",
+    "accounts_per_channel": "Hasta 2 cuentas por canal",
+    "messages_per_month": "Hasta 3000 mensajes al mes",
+    "visual_crm": "CRM visual con etiquetas y filtros",
+    "centralized_chat": "Chat centralizado multicuenta",
+    "basic_response": "Sistema de respuesta básica",
+    "simple_tracking": "Seguimiento simple para leads",
+    "biweekly_call": "1 llamada quincenal con líder de implementación",
+    "message_library": "Biblioteca de mensajes ganadores por nicho",
+    "community_access": "Acceso a comunidad privada de usuarios",
+    
+    // Pro plan details
+    "pro_description": "Para negocios en expansión que quieren escalar con automatización real.",
+    "two_integrated_channels": "Hasta 2 canales integrados",
+    "four_accounts_channel": "Hasta 4 cuentas por canal",
+    "six_thousand_messages": "Hasta 6000 mensajes al mes por cuenta",
+    "advanced_crm": "CRM visual con lead scoring y filtros avanzados",
+    "real_time_chat": "Chat centralizado en tiempo real",
+    "ai_response": "Sistema de respuesta con IA personalizada",
+    "automated_tracking": "Seguimiento automatizado por estado del lead",
+    "weekly_call": "1 llamada semanal con líder de implementación",
+    "sales_scripts": "10 scripts de venta listos para usar",
+    "training_access": "Acceso a entrenamientos grabados",
+    "follow_up_templates": "Plantillas de seguimiento post-mensaje",
+    "weekly_reports": "Reportes semanales con métricas clave",
+    
+    // Enterprise plan details
+    "enterprise_description": "Nuestro equipo trabaja codo a codo con vos para escalar todo tu sistema de captación.",
+    "full_integration": "Integración total: IG, FB, WhatsApp, Telegram, TikTok, Email, SMS",
+    "unlimited_accounts": "Cuentas ilimitadas por canal",
+    "unlimited_messages": "Mensajes ilimitados",
+    "extended_crm": "CRM extendido con automatizaciones, flujos y embudos",
+    "ai_chat": "Chat centralizado + IA con memoria contextual",
+    "personalized_ai": "IA personalizada para responder en tiempo real con tu tono y estilo",
+    "complete_tracking": "Seguimiento completo con embudos y remarketing",
+    "strategic_support": "Acompañamiento estratégico 1:1",
+    "funnel_design": "Diseño y optimización de funnels completos",
+    "hunter_team": "Team de Hunters humanos + IA híbrida en tiempo real",
+    
     "integracion_red": "Integración con 1 red social",
     "hasta_mensajes": "Hasta 50 mensajes diarios",
     "panel_basico": "Panel de análisis básico",

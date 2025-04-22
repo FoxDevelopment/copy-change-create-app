@@ -1,5 +1,4 @@
 
-import { CheckCircle } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Button } from '@/components/ui/button';
 
@@ -15,54 +14,55 @@ const PricingSection = () => {
           {/* Basic Plan */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <div className="p-6 border-b border-gray-100">
-              <h3 className="text-xl font-bold mb-2">🟢 HUNTER BASE</h3>
-              <p className="text-gray-600 mb-4">Ideal para emprendedores que quieren activar su prospección digital.</p>
+              <h3 className="text-xl font-bold mb-2">🟢 {t('plan_basico')}</h3>
+              <p className="text-gray-600 mb-4">{t('basic_description')}</p>
               <div className="flex items-baseline mb-4">
-                <span className="text-gray-500">Desde</span>
+                <span className="text-gray-500">{t('desde')}</span>
                 <span className="text-4xl font-bold mx-2">$XXX</span>
-                <span className="text-gray-500">/mes</span>
+                <span className="text-gray-500">{t('mes')}</span>
               </div>
             </div>
             <div className="p-6">
+              <p className="font-semibold mb-4">{t('incluye')}:</p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>1 canal integrado (Instagram, WhatsApp, Facebook o Telegram)</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('one_integrated_channel')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Hasta 2 cuentas por canal</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('accounts_per_channel')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Hasta 3000 mensajes al mes</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('messages_per_month')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>CRM visual con etiquetas y filtros</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('visual_crm')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Chat centralizado multicuenta</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('centralized_chat')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Sistema de respuesta básica</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('basic_response')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Seguimiento simple para leads</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('simple_tracking')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>1 llamada quincenal con líder de implementación</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('biweekly_call')}</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                <p className="font-semibold mb-2">🎁 Extras:</p>
+                <p className="font-semibold mb-2">🎁 {t('extras')}:</p>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Biblioteca de mensajes ganadores por nicho</li>
-                  <li>• Acceso a comunidad privada de usuarios</li>
+                  <li>• {t('message_library')}</li>
+                  <li>• {t('community_access')}</li>
                 </ul>
               </div>
               <Button className="w-full mt-8 bg-emerald-600 hover:bg-emerald-700">{t('elegir_plan')}</Button>
@@ -71,58 +71,59 @@ const PricingSection = () => {
           
           {/* Professional Plan */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden transform scale-105 relative z-10 hover:shadow-xl transition-shadow">
-            <div className="absolute top-0 right-0 bg-emerald-500 text-white py-1 px-4 text-sm font-medium">Popular</div>
+            <div className="absolute top-0 right-0 bg-emerald-500 text-white py-1 px-4 text-sm font-medium">{t('popular')}</div>
             <div className="p-6 border-b border-gray-100 bg-emerald-50">
-              <h3 className="text-xl font-bold mb-2">🔵 HUNTER PRO</h3>
-              <p className="text-gray-600 mb-4">Para negocios en expansión que quieren escalar con automatización real.</p>
+              <h3 className="text-xl font-bold mb-2">🔵 {t('plan_profesional')}</h3>
+              <p className="text-gray-600 mb-4">{t('pro_description')}</p>
               <div className="flex items-baseline mb-4">
-                <span className="text-gray-500">Desde</span>
+                <span className="text-gray-500">{t('desde')}</span>
                 <span className="text-4xl font-bold mx-2">$XXX</span>
-                <span className="text-gray-500">/mes</span>
+                <span className="text-gray-500">{t('mes')}</span>
               </div>
             </div>
             <div className="p-6">
+              <p className="font-semibold mb-4">{t('incluye')}:</p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Hasta 2 canales integrados</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('two_integrated_channels')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Hasta 4 cuentas por canal</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('four_accounts_channel')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Hasta 6000 mensajes al mes por cuenta</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('six_thousand_messages')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>CRM visual con lead scoring y filtros avanzados</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('advanced_crm')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Chat centralizado en tiempo real</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('real_time_chat')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Sistema de respuesta con IA personalizada</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('ai_response')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Seguimiento automatizado por estado del lead</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('automated_tracking')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>1 llamada semanal con líder de implementación</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('weekly_call')}</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                <p className="font-semibold mb-2">🎁 Extras:</p>
+                <p className="font-semibold mb-2">🎁 {t('extras')}:</p>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• 10 scripts de venta listos para usar</li>
-                  <li>• Acceso a entrenamientos grabados</li>
-                  <li>• Plantillas de seguimiento post-mensaje</li>
-                  <li>• Reportes semanales con métricas clave</li>
+                  <li>• {t('sales_scripts')}</li>
+                  <li>• {t('training_access')}</li>
+                  <li>• {t('follow_up_templates')}</li>
+                  <li>• {t('weekly_reports')}</li>
                 </ul>
               </div>
               <Button className="w-full mt-8 bg-emerald-600 hover:bg-emerald-700">{t('elegir_plan')}</Button>
@@ -132,55 +133,56 @@ const PricingSection = () => {
           {/* Enterprise Plan */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <div className="p-6 border-b border-gray-100">
-              <h3 className="text-xl font-bold mb-2">🟣 HUNTER GP (Growth Partner)</h3>
-              <p className="text-gray-600 mb-4">Nuestro equipo trabaja codo a codo con vos para escalar todo tu sistema de captación.</p>
+              <h3 className="text-xl font-bold mb-2">🟣 {t('plan_empresarial')}</h3>
+              <p className="text-gray-600 mb-4">{t('enterprise_description')}</p>
               <div className="flex items-baseline mb-4">
-                <span className="text-gray-500">Desde</span>
+                <span className="text-gray-500">{t('desde')}</span>
                 <span className="text-4xl font-bold mx-2">$XXX</span>
-                <span className="text-gray-500">/mes</span>
+                <span className="text-gray-500">{t('mes')}</span>
               </div>
             </div>
             <div className="p-6">
+              <p className="font-semibold mb-4">{t('incluye')}:</p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Integración total: IG, FB, WhatsApp, Telegram, TikTok, Email, SMS</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('full_integration')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Cuentas ilimitadas por canal</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('unlimited_accounts')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Mensajes ilimitados</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('unlimited_messages')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>CRM extendido con automatizaciones, flujos y embudos</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('extended_crm')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Chat centralizado + IA con memoria contextual</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('ai_chat')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>IA personalizada para responder en tiempo real con tu tono y estilo</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('personalized_ai')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Seguimiento completo con embudos y remarketing</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('complete_tracking')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Acompañamiento estratégico 1:1</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('strategic_support')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Diseño y optimización de funnels completos</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('funnel_design')}</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle size={18} className="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Team de Hunters humanos + IA híbrida en tiempo real</span>
+                  <span className="mr-2">✅</span>
+                  <span>{t('hunter_team')}</span>
                 </li>
               </ul>
               <Button className="w-full mt-8 bg-emerald-600 hover:bg-emerald-700">{t('elegir_plan')}</Button>
@@ -193,4 +195,3 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
-
