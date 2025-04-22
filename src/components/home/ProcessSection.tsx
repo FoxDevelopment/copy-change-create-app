@@ -90,7 +90,7 @@ const ProcessSection = () => {
             description={t('multicanal_desc')}
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
