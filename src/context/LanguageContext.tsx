@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 type Language = 'es' | 'en';
@@ -178,7 +177,10 @@ const translations = {
     "pausado": "Paused",
     "finalizado": "Finished",
     "eliminar": "Delete",
-    "descargar": "Download"
+    "descargar": "Download",
+    
+    // Process steps
+    "proceso_hunter_ai_pro": "PROCESO HUNTER AI PRO"
   },
   es: {
     // Navbar
@@ -348,7 +350,10 @@ const translations = {
     "pausado": "Pausado",
     "finalizado": "Finalizado",
     "eliminar": "Eliminar",
-    "descargar": "Descargar"
+    "descargar": "Descargar",
+    
+    // Process steps
+    "proceso_hunter_ai_pro": "PROCESO HUNTER AI PRO"
   }
 };
 
