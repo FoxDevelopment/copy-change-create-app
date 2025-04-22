@@ -1,30 +1,38 @@
 
 import { useLanguage } from '../../context/LanguageContext';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 
-const ProcessCard = ({ title, description, index }: { title: string; description: string; index: number }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: index * 0.2 }}
-  >
-    <Card className="group relative overflow-hidden backdrop-blur-sm border-emerald-500/20 hover:border-emerald-500/40 transition-all duration-500 hover:-translate-y-2">
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/30 to-white/90 dark:from-emerald-900/30 dark:to-gray-900/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      <CardHeader className="relative">
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600">
+const ProcessCard = ({ title, description, index }: { title: string; description: string; index: number }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+      className="group"
+    >
+      <div className="relative overflow-hidden rounded-lg shadow-sm hover:shadow-lg transition-all duration-500 bg-white hover:-translate-y-2 h-[280px]">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/30 to-white/90 dark:from-emerald-900/30 dark:to-gray-900/90" />
+        
+        {/* Card Content */}
+        <div className="relative p-6 h-full flex flex-col">
+          {/* Icon/Number */}
+          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/10 text-emerald-600 mb-4">
             <span className="text-lg font-bold">{index + 1}</span>
           </div>
-          <h4 className="text-xl font-semibold bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 bg-clip-text text-transparent">{title}</h4>
+          
+          {/* Title */}
+          <h4 className="text-xl font-semibold text-gray-800 mb-3">{title}</h4>
+          
+          {/* Description - Hidden initially, shown on hover */}
+          <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+            <p className="text-gray-600 leading-relaxed">{description}</p>
+          </div>
         </div>
-      </CardHeader>
-      <CardContent className="relative">
-        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{description}</p>
-      </CardContent>
-    </Card>
-  </motion.div>
-);
+      </div>
+    </motion.div>
+  );
+};
 
 const ProcessSection = () => {
   const { t } = useLanguage();
@@ -47,7 +55,7 @@ const ProcessSection = () => {
             className="text-5xl font-black relative inline-block"
           >
             <span className="bg-gradient-to-r from-emerald-600 via-emerald-400 to-emerald-600 bg-clip-text text-transparent background-animate">
-              {t('proceso_hunter_ai_pro')}
+              PROCESO HUNTER AI PRO
             </span>
             <motion.div 
               initial={{ scaleX: 0 }}

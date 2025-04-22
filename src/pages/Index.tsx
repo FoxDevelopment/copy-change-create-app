@@ -10,6 +10,7 @@ import BenefitsSection from '../components/home/BenefitsSection';
 import PricingSection from '../components/home/PricingSection';
 import FAQSection from '../components/home/FAQSection';
 import CTASection from '../components/home/CTASection';
+import PartnersCarousel from '../components/home/PartnersCarousel';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -21,6 +22,7 @@ const Index = () => {
         <HeroSection />
         <WhatIsHunter />
         <ProcessSection />
+        <PartnersCarousel />
         <TestimonialsCarousel />
         <BenefitsSection />
         <PricingSection />

@@ -15,7 +15,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/3dfcccdb-7db4-4217-bb7f-d6afcf561dd2.png" 
                 alt="Hunter Logo" 
-                className="h-10 w-auto"
+                className="h-10 w-auto invert" // Invert to make it white
               />
               <span className="ml-2 text-white text-xl font-bold">HUNTER</span>
             </div>
@@ -47,6 +47,16 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('enlaces_rapidos')}</h3>
             <ul className="space-y-2">
+              <li>
+                <a href="/blog" className="text-gray-400 hover:text-emerald-500 transition-colors">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-gray-400 hover:text-emerald-500 transition-colors">
+                  FAQ
+                </a>
+              </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-emerald-500 transition-colors">
                   {t('politica_privacidad')}
